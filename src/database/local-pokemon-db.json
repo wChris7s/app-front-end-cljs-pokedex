@@ -1,0 +1,50 @@
+{
+  "pokemon-1": {
+    "id": 1,
+    "name": "Bulbasaur",
+    "body": "Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo.",
+    "img": "/img/bulbasaur.png"
+  },
+  "pokemon-2": {
+    "id": 2,
+    "name": "Charmander",
+    "body": "Prefiere las cosas calientes. Dicen que cuando llueve le sale vapor de la punta de la cola.",
+    "img": "/img/charmander.png"
+  },
+  "pokemon-3": {
+    "id": 3,
+    "name": "Charizard",
+    "body": "Se dice que el fuego de Charizard arde con más fuerza cuantas más duras batallas haya vivido.",
+    "img": "/img/charizard.png"
+  },
+  "pokemon-4": {
+    "id": 4,
+    "name": "Squirtle",
+    "body": "Cuando retrae su largo cuello en el caparazón, dispara agua a una presión increíble.",
+    "img": "/img/squirtle.png"
+  },
+  "pokemon-5": {
+    "id": 5,
+    "name": "Pikachu",
+    "body": "Cuando se enfada, este Pokémon descarga la energía que almacena en el interior de las bolsas de las mejillas.",
+    "img": "/img/pikachu.png"
+  },
+  "pokemon-6": {
+    "id": 6,
+    "name": "Jigglypuff",
+    "body": "Cuando le tiemblan sus redondos y adorables ojos, entona una melodía agradable y misteriosa con la que duerme a sus enemigos.",
+    "img": "/img/jigglypuff.png"
+  },
+  "pokemon-7": {
+    "id": 7,
+    "name": "Diglett",
+    "body": "Vive 1 m por debajo del suelo, donde se alimenta de raíces. A veces también aparece en la superficie.",
+    "img": "/img/diglett.png"
+  },
+  "pokemon-8": {
+    "id": 8,
+    "name": "Snorlax",
+    "body": "Su estómago puede digerir todo tipo de comida, incluso si está podrida o mohosa.",
+    "img": "/img/snorlax.png"
+  }
+}

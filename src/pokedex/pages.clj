@@ -1,5 +1,6 @@
 (ns pokedex.pages
-  (:require [hiccup.page :refer [html5]]
+  (:require [hiccup.page
+             :refer [html5]]
             [component.pokemon-navbar :as nav]
             [component.pokemon-grid :as grid]
             [component.pokemon-info :as inf]))
@@ -14,6 +15,7 @@
      [:script {:src "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" :integrity "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" :crossorigin "anonymous"}]
      [:title title]]
     body
+    [:script {:type "text/javascript" :src "/js/main.js"}]
     ))
 
 ; La función 'index' se encarga de cargar el main page.

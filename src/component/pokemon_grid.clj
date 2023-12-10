@@ -4,7 +4,7 @@
 
 
 ;; Se lee el archivo .json que es una bd local.
-(def data-pk (json/read (io/reader "src/database/local-pokemon-db.json")))
+(def data-pk (json/read (io/reader "resources/public/data/local-pokemon-db.json")))
 
 ;; Componente base para mostrar un card.
 (defn card-component [id, name, description, img]

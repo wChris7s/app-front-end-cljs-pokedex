@@ -1,5 +1,6 @@
 # Clojure
 
+> Para compilar los archivos de JavaScript: ``lein cljsbuild once``
 > Para iniciar el servidor local: ``lein ring server``
 
 ## Language Basics

@@ -2,7 +2,7 @@
   (:require [clojure.data.json :as json]
             [clojure.java.io :as io]))
 
-(def data-pk (json/read (io/reader "src/database/local-pokemon-db.json")))
+(def data-pk (json/read (io/reader "resources/public/data/local-pokemon-db.json")))
 
 (defn pokemon-info [id]
   (let [pokemon-data (data-pk id)]

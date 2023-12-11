@@ -13,7 +13,7 @@
    [:div.card-body
     [:h5.card-title name]
     [:p.card-text description]]
-   [:a.btn.btn-primary {:class "m-2" :href (str "/poke-inf/" id) :role "button"} "Link"]
+   [:a.btn.btn-outline-danger {:class "m-2" :href (str "/poke-inf/" id) :role "button"} "Estadísticas"]
    ]
   )
 

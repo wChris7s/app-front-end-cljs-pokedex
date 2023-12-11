@@ -39301,7 +39301,7 @@ if (COMPILED) {
 ;goog.provide("process.env");
 goog.require("cljs.core");
 process.env.NODE_ENV = goog.define("process.env.NODE_ENV", "development");
-goog.provide("test_js");
+goog.provide("search_addon");
 goog.require("cljs.core");
 fetch("/data/local-pokemon-db.json").then(function(response) {
   return response.json();
@@ -39313,50 +39313,50 @@ fetch("/data/local-pokemon-db.json").then(function(response) {
     var searchText = event.target.value.toLowerCase();
     if (cljs.core._EQ_.call(null, searchText, "")) {
       resultsDiv.innerHTML = "";
-      test_js.return$.call(null);
+      search_addon.return$.call(null);
     } else {
     }
-    test_js.matchingPokemons = pokemons.filter(function(pokemon) {
+    search_addon.matchingPokemons = pokemons.filter(function(pokemon) {
       return pokemon.name.toLowerCase().includes(searchText);
     });
-    return test_js.showResults.call(null, test_js.matchingPokemons);
+    return search_addon.showResults.call(null, search_addon.matchingPokemons);
   });
-  return test_js.showResults = function test_js$showResults(pokemonList) {
+  return search_addon.showResults = function search_addon$showResults(pokemonList) {
     resultsDiv.innerHTML = "";
     return pokemonList.forEach(function(pokemon) {
       var name = document.createElement("span");
       name.style = 'display: block; font-family: "Monaco", Courier, monospace;';
       name.textContent = pokemon.name;
-      test_js.image = document.createElement("img");
-      test_js.image.src = pokemon.img;
-      test_js.image.alt = pokemon.name;
-      test_js.image.style = "display: inline-block; width: 100px;";
-      test_js.button = document.createElement("button");
-      test_js.button.classList.add("btn", "btn-outline-warning", "btn-sm");
-      test_js.button.textContent = "Seleccionar";
-      test_js.button.addEventListener("click", function() {
+      search_addon.image = document.createElement("img");
+      search_addon.image.src = pokemon.img;
+      search_addon.image.alt = pokemon.name;
+      search_addon.image.style = "display: inline-block; width: 100px;";
+      search_addon.button = document.createElement("button");
+      search_addon.button.classList.add("btn", "btn-outline-warning", "btn-sm");
+      search_addon.button.textContent = "Seleccionar";
+      search_addon.button.addEventListener("click", function() {
         return window.location.href = ["/poke-inf/pokemon-", cljs.core.str.cljs$core$IFn$_invoke$arity$1(pokemon.id), ""].join("");
       });
-      test_js.col1 = document.createElement("div");
-      test_js.col1.classList.add("col");
-      test_js.col1.appendChild(test_js.image);
-      test_js.col2 = document.createElement("div");
-      test_js.col2.classList.add("col", "py-3");
-      test_js.col2.appendChild(name);
-      test_js.col2.appendChild(test_js.button);
-      test_js.row = document.createElement("div");
-      test_js.row.classList.add("row");
-      test_js.row.appendChild(test_js.col1);
-      test_js.row.appendChild(test_js.col2);
-      test_js.col = document.createElement("div");
-      test_js.col.classList.add("col");
-      test_js.col.appendChild(test_js.row);
-      return resultsDiv.appendChild(test_js.col);
+      search_addon.col1 = document.createElement("div");
+      search_addon.col1.classList.add("col");
+      search_addon.col1.appendChild(search_addon.image);
+      search_addon.col2 = document.createElement("div");
+      search_addon.col2.classList.add("col", "py-3");
+      search_addon.col2.appendChild(name);
+      search_addon.col2.appendChild(search_addon.button);
+      search_addon.row = document.createElement("div");
+      search_addon.row.classList.add("row");
+      search_addon.row.appendChild(search_addon.col1);
+      search_addon.row.appendChild(search_addon.col2);
+      search_addon.col = document.createElement("div");
+      search_addon.col.classList.add("col");
+      search_addon.col.appendChild(search_addon.row);
+      return resultsDiv.appendChild(search_addon.col);
     });
   };
 }).catch(function(error) {
   return console.error("Error al cargar el archivo JSON:", error);
 });
-test_js.log_test = function test_js$log_test() {
+search_addon.log_test = function search_addon$log_test() {
   return console.log("Hello from ClojureScript!");
 };

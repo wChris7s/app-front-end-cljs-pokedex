@@ -1,4 +1,4 @@
-(ns test-js)
+(ns search-addon)
 
 (->
   (js/fetch "/data/local-pokemon-db.json")

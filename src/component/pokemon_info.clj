@@ -6,7 +6,7 @@
 
 (defn pokemon-info [id]
   (let [pokemon-data (data-pk id)]
-    [:div.container-sm {:class "p-4 "}
+    [:div {:class "container-sm position-absolute top-50 start-50 translate-middle"}
      [:div.row
       [:div.col-4
        [:div {:class "card text-bg-dark h-100"}

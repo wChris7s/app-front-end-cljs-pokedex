@@ -17,7 +17,7 @@
         [:a.btn.btn-outline-danger {:class "m-2" :href "/index"  :role "button"} "Regresar"]
         ]]
       [:div.col {:class "table-responsive-md" :style "padding-top: 6%"}
-       [:table {:class "table table-bordered table-striped text-center border-dark"}
+       [:table {:class "table table-bordered table-striped text-center border-dark table-hover"}
         [:tbody
          [:tr
           [:td.fw-bold  {:class "bg-danger"} "Altura"]

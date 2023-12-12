@@ -136,8 +136,16 @@ JSON local.
 
 ### pokemon_info.clj
 
-TODO
-
+Define un componente para generar una vista mas detallada de las estadisticasa de cada pokemon,
+estas estadisticas provienen de datos almacenados en el archivo JSON
+* Lectura del archivo JSON:
+  * data-pk se inicializa leyendo un archivo JSON local llamado "local-pokemon-db.json" utilizando las funciones de clojure.data.json y clojure.java.io, para luego ser renombrado como pokemon-data.
+* Container:
+  * el container es divido en 2 con div.row seguido de varios div.col.
+  * El el primer espacio reciclamos codigo del card-component para poder visualizar: description, name y la imagen del pokemon. Luego pasamos a crear un boton con el enlace a la pagina principal po si se requiere regresar.
+  * En el segundo espacio en la parte superior creamos un cuadro en el que se cargan las caracteristicas: altura, categoria, habilidad, tipo, debilidad. Estos se dividen en diferentes .div-cool y .div-row para una mejor visualizacion.
+  * En el segundo espacio en la parte inferior creamos barras de carga cada una correspondiente a un dato almacenado en el archivo JSON correspondiente a estadisticas como son : ps(puntos de salud), ataque, defensa, ae(ataque especial), de(defensa especial), velocidad,
+  estas barras se cargan dependiendo el numero almacenado en las caracteristicas para que se adapte segun cada pokemon.
 ### search_addon.cljs
 
 Este script define un buscador de Pokémon en ClojureScript. El código utiliza una estructura funcional con manejo de eventos para actualizar dinámicamente la interfaz de usuario en respuesta a la entrada del usuario.

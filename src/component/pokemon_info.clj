@@ -6,7 +6,7 @@
 
 (defn pokemon-info [id]
   (let [pokemon-data (data-pk id)]
-    [:div.container-sm
+    [:div.container-sm {:class "p-4 "}
      [:div.row
       [:div.col-4
        [:div {:class "card text-bg-dark h-100"}
@@ -14,33 +14,35 @@
         [:div.card-body
          [:h1.text-center (get-in pokemon-data ["name"])]
          [:p.card-text (get-in pokemon-data ["body"])]]
-        [:a.btn.btn-danger {:href "/index" :role "button"} "Regresar"]
+        [:a.btn.btn-outline-danger {:class "m-2" :href "/index"  :role "button"} "Regresar"]
         ]]
-      [:div.col
-       [:div.card.bg-danger.text-white.text-center
-        [:div.row
-         [:div.col
-          [:p {:class "fw-bold"} "Altura:"]
-          [:p.text-white (get-in pokemon-data ["info" "altura"])]]
-         [:div.col
-          [:p {:class "fw-bold"} "Categoría:"]
-          [:p.text-white (get-in pokemon-data ["info" "categoria"])]]
-         ]
-        [:div.row
-         [:div.col
-          [:p {:class "fw-bold"} "Habilidad:"]
-          [:p.text-white (get-in pokemon-data ["info" "habilidad"])]]
-         [:div.col
-          [:p {:class "fw-bold"} "Tipo:"]
-          [:p.text-white (get-in pokemon-data ["info" "tipo"])]]
-         ]
-        [:div.row
-         [:div.col
-          [:p {:class "fw-bold"} "Debilidad:"]
-          [:p.text-white (get-in pokemon-data ["info" "debilidad"])]]
-         [:div.col
-          [:p {:class "fw-bold"} "Peso:"]
-          [:p.text-white (get-in pokemon-data ["info" "peso"])]]
+      [:div.col {:class "table-responsive-md" :style "padding-top: 6%"}
+       [:table {:class "table table-bordered table-striped text-center border-dark"}
+        [:tbody
+         [:tr
+          [:td.fw-bold  {:class "bg-danger"} "Altura"]
+          [:td.fw-bold {:class "bg-danger"} "Categoría"]
+          ]
+         [:tr
+          [:td {:class "text-light bg-dark"} (get-in pokemon-data ["info" "altura"]) " m"]
+          [:td {:class "text-light bg-dark"} (get-in pokemon-data ["info" "categoria"])]
+          ]
+         [:tr
+          [:td.fw-bold {:class "bg-danger"} "Habilidad"]
+          [:td.fw-bold {:class "bg-danger"} "Tipo"]
+          ]
+         [:tr
+          [:td {:class "text-light bg-dark"} (get-in pokemon-data ["info" "habilidad"])]
+          [:td {:class "text-light bg-dark"} (get-in pokemon-data ["info" "tipo"])]
+          ]
+         [:tr
+          [:td.fw-bold {:class "bg-danger"} "Debilidad"]
+          [:td.fw-bold {:class "bg-danger"} "Peso"]
+          ]
+         [:tr
+          [:td {:class "text-light bg-dark"} (get-in pokemon-data ["info" "debilidad"])]
+          [:td {:class "text-light bg-dark"} (get-in pokemon-data ["info" "peso"]) " kg"]
+          ]
          ]
         ]
        [:div.row.center

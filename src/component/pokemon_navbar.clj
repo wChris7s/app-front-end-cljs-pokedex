@@ -6,7 +6,7 @@
   ])
 
 (defn github-component []
- [:a {:href "#" :target "_blank" :class "ml-auto me-2"}
+ [:a {:href "https://github.com/wChris7s/app-front-end-cljs-pokedex" :target "_blank" :class "ml-auto me-2"}
   [:img {:src "/img/github-mark-white.svg" :alt "GitHub" :width "30" :class "d-inline-block align-text-right"}]]
  )
 

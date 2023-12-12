@@ -5,12 +5,22 @@
     "body": "Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo.",
     "img": "/img/bulbasaur.png",
     "img2": "/img/bulbasaurp.png",
-    "altura": "0.7 m",
-    "peso": "6.9 Kg",
-    "categoria": "Semilla",
-    "habilidad": "Espesura",
-    "tipo": "Planta",
-    "debilidad": "Fuego, Psiquico, Volador, Hielo"
+    "info":{
+      "altura": "0.7 m",
+      "peso": "6.9 Kg",
+      "categoria": "Semilla",
+      "habilidad": "Espesura",
+      "tipo": "Planta",
+      "debilidad": "Fuego, Psiquico, Volador, Hielo"
+    },
+    "estadisticas": {
+          "ps": "15",
+          "ataque": "15",
+          "defensa": "15",
+          "ae": "20",
+          "de": "20",
+          "velocidad": "15"
+    }
   },
   "pokemon-2": {
     "id": 2,
@@ -18,12 +28,22 @@
     "body": "Prefiere las cosas calientes. Dicen que cuando llueve le sale vapor de la punta de la cola.",
     "img": "/img/charmander.png",
     "img2": "/img/charmanderp.png",
-    "altura": "0.6 m",
-    "peso": "8.5 Kg",
-    "categoria": "Lagartija",
-    "habilidad": "Mar llamas",
-    "tipo": "Fuego",
-    "debilidad": "Agua, Tierra, Roca"
+    "info":{
+      "altura": "0.6 m",
+      "peso": "8.5 Kg",
+      "categoria": "Lagartija",
+      "habilidad": "Mar llamas",
+      "tipo": "Fuego",
+      "debilidad": "Agua, Tierra, Roca"
+    },
+    "estadisticas": {
+      "ps": "15",
+      "ataque": "20",
+      "defensa": "15",
+      "ae": "20",
+      "de": "15",
+      "velocidad": "20"
+    }
   },
   "pokemon-3": {
     "id": 3,
@@ -31,12 +51,22 @@
     "body": "Se dice que el fuego de Charizard arde con más fuerza cuantas más duras batallas haya vivido.",
     "img": "/img/charizard.png",
     "img2": "/img/charizardp.png",
-    "altura": "1,7 m",
-    "peso": "90.5 Kg",
-    "categoria": "Llama",
-    "habilidad": "Mar Llamas",
-    "tipo": "fuego, volador",
-    "debilidad": "Agua, Electrico, Roca"
+    "info": {
+      "altura": "1,7 m",
+      "peso": "90.5 Kg",
+      "categoria": "Llama",
+      "habilidad": "Mar Llamas",
+      "tipo": "fuego, volador",
+      "debilidad": "Agua, Electrico, Roca"
+    },
+    "estadisticas": {
+      "ps": "25",
+      "ataque": "25",
+      "defensa": "25",
+      "ae": "35",
+      "de": "25",
+      "velocidad": "35"
+    }
   },
   "pokemon-4": {
     "id": 4,
@@ -44,12 +74,22 @@
     "body": "Cuando retrae su largo cuello en el caparazón, dispara agua a una presión increíble.",
     "img": "/img/squirtle.png",
     "img2": "/img/squirtlep.png",
-    "altura": "0,5 m",
-    "peso": "9,0 Kg",
-    "categoria": "Tortuguita",
-    "habilidad": "Torrente",
-    "tipo": "Agua",
-    "debilidad": "Planta, Electrico"
+    "info":{
+      "altura": "0,5 m",
+      "peso": "9,0 Kg",
+      "categoria": "Tortuguita",
+      "habilidad": "Torrente",
+      "tipo": "Agua",
+      "debilidad": "Planta, Electrico"
+    },
+    "estadisticas": {
+      "ps": "15",
+      "ataque": "15",
+      "defensa": "20",
+      "ae": "15",
+      "de": "20",
+      "velocidad": "15"
+    }
   },
   "pokemon-5": {
     "id": 5,
@@ -57,12 +97,22 @@
     "body": "Cuando se enfada, este Pokémon descarga la energía que almacena en el interior de las bolsas de las mejillas.",
     "img": "/img/pikachu.png",
     "img2": "/img/pikachup.png",
-    "altura": "0,4 m",
-    "peso": "6,0 Kg",
-    "categoria": "Raton",
-    "habilidad": "Elec.Estatica",
-    "tipo": "Electrico",
-    "debilidad": "Tierra"
+    "info":{
+      "altura": "0,4 m",
+      "peso": "6,0 Kg",
+      "categoria": "Raton",
+      "habilidad": "Elec.Estatica",
+      "tipo": "Electrico",
+      "debilidad": "Tierra"
+    },
+    "estadisticas": {
+      "ps": "15",
+      "ataque": "20",
+      "defensa": "15",
+      "ae": "15",
+      "de": "15",
+      "velocidad": "35"
+    }
   },
   "pokemon-6": {
     "id": 6,
@@ -70,12 +120,22 @@
     "body": "Cuando le tiemblan sus redondos y adorables ojos, entona una melodía agradable y misteriosa con la que duerme a sus enemigos.",
     "img": "/img/jigglypuff.png",
     "img2": "/img/jigglypuffp.png",
-    "altura": "0,5 m",
-    "peso": "5,5 Kg",
-    "categoria": "Globo",
-    "habilidad": "Gran encanto",
-    "tipo": "Normal, Hada",
-    "debilidad": "Acero, Veneno"
+    "info":{
+      "altura": "0,5 m",
+      "peso": "5,5 Kg",
+      "categoria": "Globo",
+      "habilidad": "Gran encanto",
+      "tipo": "Normal, Hada",
+      "debilidad": "Acero, Veneno"
+    },
+    "estadisticas": {
+      "ps": "35",
+      "ataque": "15",
+      "defensa": "10",
+      "ae": "15",
+      "de": "10",
+      "velocidad": "10"
+    }
   },
   "pokemon-7": {
     "id": 7,
@@ -83,12 +143,22 @@
     "body": "Vive 1 m por debajo del suelo, donde se alimenta de raíces. A veces también aparece en la superficie.",
     "img": "/img/diglett.png",
     "img2": "/img/diglettp.png",
-    "altura": "0,2 m",
-    "peso": "0,8 Kg",
-    "categoria": "Topo",
-    "habilidad": "Velo Arena",
-    "tipo": "Tierra",
-    "debilidad": "Agua, Planta, Hielo"
+    "info":{
+      "altura": "0,2 m",
+      "peso": "0,8 Kg",
+      "categoria": "Topo",
+      "habilidad": "Velo Arena",
+      "tipo": "Tierra",
+      "debilidad": "Agua, Planta, Hielo"
+    },
+    "estadisticas": {
+      "ps": "5",
+      "ataque": "20",
+      "defensa": "10",
+      "ae": "15",
+      "de": "15",
+      "velocidad": "30"
+    }
   },
   "pokemon-8": {
     "id": 8,
@@ -96,11 +166,21 @@
     "body": "Su estómago puede digerir todo tipo de comida, incluso si está podrida o mohosa.",
     "img": "/img/snorlax.png",
     "img2": "/img/snorlaxp.png",
-    "altura": "2,1 m",
-    "peso": "460,5 Kg",
-    "categoria": "Dormir",
-    "habilidad": "Inmunidad",
-    "tipo": "Normal",
-    "debilidad": "Lucha"
+    "info":{
+      "altura": "2,1 m",
+      "peso": "460,5 Kg",
+      "categoria": "Dormir",
+      "habilidad": "Inmunidad",
+      "tipo": "Normal",
+      "debilidad": "Lucha"
+    },
+    "estadisticas": {
+      "ps": "70",
+      "ataque": "45",
+      "defensa": "25",
+      "ae": "25",
+      "de": "45",
+      "velocidad": "10"
+    }
   }
 }
